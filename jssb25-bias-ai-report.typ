@@ -8,16 +8,32 @@
     ),
   ),
   index-terms: ("Scientific writing", "Typesetting", "Document creation", "Syntax"),
-  bibliography-file: "refs.bib",
+  bibliography-file: "refs.yml",
 )
 
 = Plan
 
+PART 1: Introduction
 - Introduce ML task for emotion recognition on human face images
-- 
+  - Give description of task
+  - Give data source that will be used
+  - Explain types of prediction/outputs
+  - Give usecase of the system
+  - Show immediate ethical issues to be considered in advance
+- Explain importance of ethical impact assessments
+- Summarize Value Sensitive Design framework
+  - What is it?
+  - How does it work?
+  - Why is it important for this task? 
+
+PART 2: VSD ethical impact assessment
+- Identify stakeholders, differenciate between direct and indirect stakeholders
+- Identify values that are relevant to each stakeholder groups
+- Describe risk and harms for each stakeholder groups
+
 
 = Introduction
-Scientific writing is a crucial part of the research process, allowing researchers to share their findings with the wider scientific community. However, the process of typesetting scientific documents can often be a frustrating and time-consuming affair, particularly when using outdated tools such as LaTeX. Despite being over 30 years old, it remains a popular choice for scientific writing due to its power and flexibility. However, it also comes with a steep learning curve, complex syntax, and long compile times, leading to frustration and despair for many researchers. @netwok2020
+Scientific writing is a crucial part of the research process, allowing researchers to share their findings with the wider scientific community. However, the process of typesetting scientific documents can often be a frustrating and time-consuming affair, particularly when using outdated tools such as LaTeX. Despite being over 30 years old, it remains a popular choice for scientific writing due to its power and flexibility. However, it also comes with a steep learning curve, complex syntax, and long compile times, leading to frustration and despair for many researchers.
 
 == Paper overview
 In this paper we introduce Typst, a new typesetting system designed to streamline the scientific writing process and provide researchers with a fast, efficient, and easy-to-use alternative to existing systems. Our goal is to shake up the status quo and offer researchers a better way to approach scientific writing.
