@@ -1,6 +1,28 @@
-Github-regression-testing:
-    type: web 
-    title: 4 ways we use GitHub Actions to build GitHub
-    date: 2022-04-05
-    author: ["B. Douglas"]
-    url: https://github.blog/2022-04-05-4-ways-we-use-github-actions-to-build-github/
+Emotion-recognition-meta-review:
+    type: article
+    title: "Emotion recognition and artificial intelligence: A systematic review (2014–2023) and research recommendations"
+    date: 2024
+    author: ["S. K. Khare", "V. Blanes-Vidal", "E. S. Nadimi", "U. R. Acharya"]
+    url: https://www.sciencedirect.com/science/article/pii/S1566253523003354
+
+Emotion-wheel-source:
+    type: book
+    title: "Theories of Emotion, Vol. 1"
+    date: 2013
+    author: ["R. Plutchik", "H. Kellerman"]
+    url: https://books.google.co.uk/books?id=Ie1GBQAAQBAJ&lpg=PP1&ots=MA0_sk5AGf&lr&pg=PP1#v=onepage&q&f=false
+
+Emotion-recognition-medical-surveillance:
+    type: article
+    title: "Emotion Recognition for Healthcare Surveillance Systems Using Neural Networks: {A} Survey"
+    date: 2021
+    author: ["M. Dhuheir", "A. Albaseer", "E. Baccour", "A. Erbad", "M. Abdallah", "M. Hamdi"]
+    url: https://arxiv.org/abs/2107.05989
+
+
+# Name:
+#     type: 
+#     title: 
+#     date: 
+#     author: [""]
+#     url: 

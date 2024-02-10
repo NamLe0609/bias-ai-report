@@ -11,42 +11,41 @@
   bibliography-file: "refs.yml",
 )
 
-= Plan
-
-PART 1: Introduction
-- Introduce ML task for emotion recognition on human face images
-  - Give description of task
-  - Give data source that will be used
-  - Explain types of prediction/outputs
-  - Give usecase of the system
-  - Show immediate ethical issues to be considered in advance
-- Explain importance of ethical impact assessments
-- Summarize Value Sensitive Design framework
-  - What is it?
-  - How does it work?
-  - Why is it important for this task? 
-
-PART 2: VSD ethical impact assessment
-- Identify stakeholders, differenciate between direct and indirect stakeholders
-- Identify values that are relevant to each stakeholder groups
-- Describe risk and harms for each stakeholder groups
-
-
 = Introduction
-Scientific writing is a crucial part of the research process, allowing researchers to share their findings with the wider scientific community. However, the process of typesetting scientific documents can often be a frustrating and time-consuming affair, particularly when using outdated tools such as LaTeX. Despite being over 30 years old, it remains a popular choice for scientific writing due to its power and flexibility. However, it also comes with a steep learning curve, complex syntax, and long compile times, leading to frustration and despair for many researchers.
 
-== Paper overview
-In this paper we introduce Typst, a new typesetting system designed to streamline the scientific writing process and provide researchers with a fast, efficient, and easy-to-use alternative to existing systems. Our goal is to shake up the status quo and offer researchers a better way to approach scientific writing.
+In this report, focus on a machine learning task for emotion recognition on human face images. Whilst the concept may not be novel, it is a task which is useful in a variety of applications, such as in marketing, human-robot interactions, healthcare, as well as security @Emotion-recognition-meta-review. 
 
-By leveraging advanced algorithms and a user-friendly interface, Typst offers several advantages over existing typesetting systems, including faster document creation, simplified syntax, and increased ease-of-use.
+This is a classification task which involves predicting the emotion of a person from an image of their face, and outputting the emotion(s) associated with said image. The range of possible emotions is typically decided by a dataset, and the model is trained to recognize these emotions. We aim to pick a dataset which contains the basic emotions according to Plutchik's wheel of emotions (see @emotion-wheel), which are: joy, trust, fear, surprise, sadness, disgust, anger, and anticipation
 
-To demonstrate the potential of Typst, we conducted a series of experiments comparing it to other popular typesetting systems, including LaTeX. Our findings suggest that Typst offers several benefits for scientific writing, particularly for novice users who may struggle with the complexities of LaTeX. Additionally, we demonstrate that Typst offers advanced features for experienced users, allowing for greater customization and flexibility in document creation.
+#figure(
+  image("emotion-wheel.jpg", width: 80%),
+  caption: [Plutchik's wheel of emotions @Emotion-wheel-source],
+) <emotion-wheel>
 
-Overall, we believe that Typst represents a significant step forward in the field of scientific writing and typesetting, providing researchers with a valuable tool to streamline their workflow and focus on what really matters: their research. In the following sections, we will introduce Typst in more detail and provide evidence for its superiority over other typesetting systems in a variety of scenarios.
+@emotion-wheel contains the aforementioned emotions, as well as their amplified/attenuated versions. We do not use this full range of emotions as it is not practical to train a model to recognize all of them, and because the base emotions are sufficient for most applications.
+
+Once we have decided on the classes, we need to decide on the output format of the model. We will use a softmax layer, which outputs a probability distribution over the classes. This has the benefit of giving more information than a single class output, can be used to calculate a confidence score, and is easily transformed into a positive/negative/neutral output. By choosing this output format, we allow for flexibility in the use of the model, which is crucial for a model that is to be deployed by various organization and/or be made available through open sourcing.
+
+#figure(
+  image("training-process.jpg", width: 100%),
+  caption: [Process of training an emotion recognition model @Emotion-recognition-meta-review],
+) <emotion-recognition-process>
+
+A potential use case of this model is in a medical clinic where it can be used as a healthcare surveillance system to monitor the mental health of patients. Specifically, the model could be used to detect signs of depression or anxiety in patients, and alert the clinic to administer medicine or provide support. Compared to traditional methods, such as observation from a nurse or doctor, the model could be more accurate, less prone to human error and be more available to patients. Developments in this area can be seen in Marwan Dhuheir's works @Emotion-recognition-medical-surveillance.
+
+= Paper
+
+
+
+#figure(
+  table(
+  columns: (1fr, 1fr, 1fr),
+  inset: 3pt,
+  align: center,
+  [Emotions], [Counts], [% of total],
+  ),
+  caption: [Counts of emotions after cleaning]
+) <emotion-count-post-clean>
 
 = Methods
-#lorem(90)
 
-$ a + b = gamma $
-
-#lorem(200)
