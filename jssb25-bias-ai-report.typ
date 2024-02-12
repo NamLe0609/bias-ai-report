@@ -11,7 +11,7 @@
   bibliography-file: "refs.yml",
 )
 
-= Introduction
+= Introduction (648 words)
 
 This report focuses on a machine learning task for emotion recognition on human face images. Whilst not novel, it is a useful tool in a variety of applications, such as in marketing, human-robot interactions, healthcare, as well as security @Emotion-recognition-meta-review. 
 
@@ -52,9 +52,11 @@ Choosing a dataset is the most important part of the process, especially in avoi
   caption: [Source distribution of facial emotion datasets. North/South America, Asia and Europe make up 87.5% of all frequencies @Dataset-analysis-paper.],
 ) <source-composition>
 
+To deal with this issue, we can either choose the least biased dataset from the available ones, or aggregate multiple datasets to create a more representative one. The latter is more difficult, but is the best way to ensure that the model is not biased, and so we will therefore do this.
+
 == Ethical impact, Value Sensitive Design, and use case
 
-AI ethics refers to a set of values and principles that guide the responsible use of AI technologies @AI-ethics-definition, where as AI bias refers to "computer systems that systematically and unfairly discriminate against certain individuals or groups of individuals" @Bias-main-paper. Therefore that an ethical impact aims to root out any potential biases in the model, allowing for fair outcomes for all.
+AI ethics refers to a set of values and principles that guide the responsible use of AI technologies @AI-ethics-definition, whereas AI bias refers to "computer systems that systematically and unfairly discriminate against certain individuals or groups of individuals" @Bias-main-paper. Therefore that an ethical impact aims to root out any potential biases in the model, allowing for fair outcomes for all.
 
 To do this, we employ the use of Value Sensitive Design (VSD). Value in VSD refers to value, defined as "what a group of people consider important in life" @VSD-paper, hence VSD is a methodology which considers the values of both direct and indirect stakeholders in the design of technology.
 
@@ -66,7 +68,7 @@ VSD involves three investigation steps.
 
 A potential use case of this model is in a medical clinic where it can be used as a healthcare surveillance system to monitor the mental health of patients. The model could be used to detect signs of depression or anxiety in patients, and alert the clinic to administer medicine. Compared to traditional methods, such as human observation, the model could be less prone to error and be more available to patients. Developments in this area can be seen in Marwan Dhuheir's works @Emotion-recognition-medical-surveillance.
 
-A issue in this is consent. We must make sure the model is only used on images of patients who have given explicit consent, but how do we get the consent of people who are (potentially) not mentally well enough to make decisions? Issues like this is beyond our scope of responsibility, but it is important to consider them.
+An issue in this is consent. We must make sure the model is only used on images of patients who have given explicit consent, but how do we get the consent of people who are (potentially) not mentally well enough to make decisions? Issues like this is beyond our scope of responsibility, but it is important to consider them.
 
 = Paper
 
