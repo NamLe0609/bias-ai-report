@@ -46,6 +46,13 @@ VSD-paper:
     author: ["B. Friedman", "P. Kahn", "A. Borning"]
     url: https://link.springer.com/chapter/10.1007/978-94-007-7844-3_4
 
+Dataset-analysis-paper:
+    type: article
+    title: "An Analysis of Bias in Facial Image Processing: A Review of Datasets"
+    date: 2013
+    author: ["A. M. Udefi", "S. Aina", "A. R. Lawal", "A. I. Oluwafemi"]
+    url: 
+
 
 
 # Name:
@@ -54,3 +61,4 @@ VSD-paper:
 #     date: 
 #     author: [""]
 #     url: 
+
