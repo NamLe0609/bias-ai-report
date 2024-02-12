@@ -19,6 +19,34 @@ Emotion-recognition-medical-surveillance:
     author: ["M. Dhuheir", "A. Albaseer", "E. Baccour", "A. Erbad", "M. Abdallah", "M. Hamdi"]
     url: https://arxiv.org/abs/2107.05989
 
+Gender-shades:
+    type: article
+    title: "Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification"
+    date: 2018
+    author: ["J. Buolamwini ", "T. Gebru"]
+    url: https://proceedings.mlr.press/v81/buolamwini18a.html
+
+AI-ethics-definition:
+    type: article
+    title: "Understanding artificial intelligence ethics and safety: A guide for the responsible design and implementation of AI systems in the public sector"
+    date: 2019
+    author: ["D. Leslie"]
+    url: https://doi.org/10.5281/zenodo.3240529
+
+Bias-main-paper:
+    type: article
+    title: Bias in Computer Systems
+    date: 1996
+    author: ["B. Friedman", "H. Nissenbaum"]
+
+VSD-paper:
+    type: article
+    title: Value Sensitive Design and Information Systems
+    date: 2008
+    author: ["B. Friedman", "P. Kahn", "A. Borning"]
+    url: https://link.springer.com/chapter/10.1007/978-94-007-7844-3_4
+
+
 
 # Name:
 #     type: 
