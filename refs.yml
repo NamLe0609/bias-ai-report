@@ -53,6 +53,13 @@ Dataset-analysis-paper:
     author: ["A. M. Udefi", "S. Aina", "A. R. Lawal", "A. I. Oluwafemi"]
     url: 
 
+VSD-book:
+    type: book 
+    title: "Value Sensitive Design: Applications, Adaptations, and Critiques"
+    date: 2015
+    author: ["J. Davis", "L. P. Nathan"]
+    doi: https://doi.org/10.1007/978-94-007-6970-0_3
+
 
 
 # Name:

@@ -72,7 +72,7 @@ In the hospital example, we must make sure the model is only used on images of p
 
 = Ethical impact assessment informed by VSD
 
-In section II and III, we will be talking about emotion recognition specifically for healthcare.
+In section II and III, we focus solely on healthcare use cases.
 
 #figure(
   table(
@@ -80,28 +80,16 @@ In section II and III, we will be talking about emotion recognition specifically
   inset: 5pt,
   align: center,
   [Stakeholders], [Values], [Potential risks/harms],
-  [Healthcare providers (Direct)], [Free from harm - Misdiagnosis is a form of medical negligence, which could lead to heavy consequences, such as the revocation of medical license], [],
-  [Patient (Indirect)], [Privacy, Informed consent - Hospitals expected to not record or process data unless given explicit consent], [],
-  [Medical institution (Indirect)], [Human welfare, freedom from bias - Casualties must be minimized to maintain reputation, therefore the existing system must work well for all], [],
-  [Pharmaceutical Company, medicine provider (Direct)], [Accuracy - Production and distribution chains could be disrupted if output data is incorrect (like sending too much/little resources to hospital)], [],
-  [Insurance companies (Indirect)], [Transparency - The outcome must be clear to prevent any ambiguity as to whether or not insurance must cover for a client], [],
+  [Healthcare providers (Direct)], [Free from harm, efficiency - Urgent situations require rapid outputs to diagnose and help patients. False outputs must not bring dire consequences], [Misdiagnosis is a form of medical negligence, which could lead to heavy consequences, such as the revocation of medical license. Delayed treatment could lead to death],
+  [Patient (Indirect)], [Informed consent, privacy - Hospitals expected to not record, store and process data unless given explicit consent], [(Processed) personal data would be stored in hospital databases, which could be breached and leaked. Data could also be exposed to third parties],
+  [Medical institution (Indirect)], [Human welfare, freedom from bias - Casualties must be minimized to maintain reputation so the existing system must work well for all], [Biased diagnosis and preventable deaths could lead to lawsuits, loss of trust, tarnished reputation, and funding cuts (if government funded facility).],
+  [Pharmaceutical Company (Direct)], [Accuracy - Production and distribution chains could be disrupted if output data has too many incorrect predictions], [Impacted distribution could cause sending too much/little resources to hospital, leading to shortages or wastage],
+  [Insurance companies (Indirect)], [Transparency - The outcome of the model must be clear to prevent any ambiguity as to whether or not insurance must cover for a client], [Disputes over coverage would deteriorate the relationship between the hospital and the insurance company, leading to a cancelled contract],
   ),
   caption: [Ethical impact assessment using VSD in a hospital environment]
 ) <ethical-impact-assessment-hospital>
 
-#figure(
-  table(
-  columns: (1fr, 1fr, 1fr),
-  inset: 5pt,
-  align: center,
-  [Stakeholders], [Values], [Potential risks/harms],
-  [Government institution, public health enforcer (Direct)], [Human welfare, universal usability], [],
-  [Government institution, regulators and policymakers (Indirect)], [Courtesy, trust, accountability], [],
-  [General public, (Indirect)],[Privacy, autonomy],[],
-  ),
-  caption: [Ethical impact assessment using VSD in a public health environment]
-) <ethical-impact-assessment-public-health>
-
 
 = Recommendations & Considerations
+
 
