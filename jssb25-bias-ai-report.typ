@@ -76,19 +76,15 @@ In section II and III, we will be talking about emotion recognition specifically
 
 #figure(
   table(
-  columns: (1fr, 1fr, 1fr),
+  columns: (1fr, 2fr, 2fr),
   inset: 5pt,
   align: center,
   [Stakeholders], [Values], [Potential risks/harms],
-  [Healthcare providers (Direct)], [Human welfare, healthcare providers aims to maximize lives saved, causing the least pain to patients], [],
-  [Patient (Indirect)], [Privacy], [],
-  [Medical institution (Direct)], [Human welfare, freedom from bias], [],
-  [Pharmaceutical Company, medicine provider (Direct)], [Ownership and property], [],
-  [Insurance companies (Direct)], [Ownership and property], [],
-  [Patient's guardian (Indirect)], [Informed consent], [],
-  [Government institution, public health enforcer (Direct)], [Human welfare, universal usability], [],
-  [Government institution, regulators and policymakers (Indirect)], [Courtesy, trust, accountability], [],
-  [General public, (Indirect)],[Privacy, autonomy],[],
+  [Healthcare providers (Direct)], [Free from harm - Misdiagnosis is a form of medical negligence, which could lead to heavy consequences, such as the revocation of medical license], [],
+  [Patient (Indirect)], [Privacy, Informed consent - Hospitals expected to not record or process data unless given explicit consent], [],
+  [Medical institution (Indirect)], [Human welfare, freedom from bias - Casualties must be minimized to maintain reputation, therefore the existing system must work well for all], [],
+  [Pharmaceutical Company, medicine provider (Direct)], [Accuracy - Production and distribution chains could be disrupted if output data is incorrect (like sending too much/little resources to hospital)], [],
+  [Insurance companies (Indirect)], [Transparency - The outcome must be clear to prevent any ambiguity as to whether or not insurance must cover for a client], [],
   ),
   caption: [Ethical impact assessment using VSD in a hospital environment]
 ) <ethical-impact-assessment-hospital>
@@ -105,6 +101,7 @@ In section II and III, we will be talking about emotion recognition specifically
   ),
   caption: [Ethical impact assessment using VSD in a public health environment]
 ) <ethical-impact-assessment-public-health>
+
 
 = Recommendations & Considerations
 
