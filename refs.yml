@@ -58,7 +58,14 @@ VSD-book:
     title: "Value Sensitive Design: Applications, Adaptations, and Critiques"
     date: 2015
     author: ["J. Davis", "L. P. Nathan"]
-    doi: https://doi.org/10.1007/978-94-007-6970-0_3
+    url: https://doi.org/10.1007/978-94-007-6970-0_3
+
+Mapping-VSD:
+    type: article
+    title: "Mapping value sensitive design onto AI for social good principles"
+    date: 2021
+    author: ["S. Umbrello", "I. van de Poel"]
+    url: https://doi.org/10.1007/s43681-021-00038-3
 
 
 
