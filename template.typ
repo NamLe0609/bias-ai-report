@@ -115,6 +115,8 @@
     ]
   })
 
+  show table: set block(breakable: true)
+
   // Display the paper's title.
   v(3pt, weak: true)
   align(center, text(18pt, title))

@@ -11,7 +11,7 @@
   bibliography-file: "refs.yml",
 )
 
-= Introduction (615 words)
+= Introduction (525 words)
 
 This report focuses on a machine learning task for emotion recognition on human face images. Whilst not novel, it is a useful tool in a variety of applications, such as in marketing, human-robot interactions, healthcare, and security @Emotion-recognition-meta-review. 
 
@@ -35,24 +35,7 @@ For the output format, we want a probability distribution over the classes. This
   caption: [Process of training an emotion recognition model to be used for our model from choosing a dataset to outputting a verdict @Emotion-recognition-meta-review.],
 ) <emotion-recognition-process>
 
-Choosing a dataset is the most important part of the process, especially in avoiding bias. The dataset should be representative, but most facial emotion recognition datasets simply are not. This can be seen in @racial-composition, @gender-composition, and @source-composition.
-
-#figure(
-  image("racial-composition-dataset.png", width: 100%),
-  caption: [Racial composition in common facial emotion recognition datasets with the "White" majority class @Dataset-analysis-paper.],
-) <racial-composition>
-
-#figure(
-  image("gender-composition-dataset.png", width: 100%),
-  caption: [Gender composition in common facial emotion recognition datasets with the the "Male" majority class @Dataset-analysis-paper.],
-) <gender-composition>
-
-#figure(
-  image("source-distribution.png", width: 100%),
-  caption: [Source distribution of facial emotion datasets. North/South America, Asia and Europe make up 87.5% of all frequencies @Dataset-analysis-paper.],
-) <source-composition>
-
-To deal with this issue, we can either choose the least biased dataset from the available ones, or aggregate multiple datasets to create a more representative one. We chose the latter despite its difficulty since thats the best way to ensure that the model is unbiased.
+The dataset used for training is custom-made, and the process of producing it will be elaborated in section III.
 
 == Ethical impact, Value Sensitive Design, and use case
 
@@ -74,10 +57,11 @@ In the hospital example, we must make sure the model is only used on images of p
 
 In section II and III, we focus solely on healthcare use cases.
 
+#show figure: set block(breakable: true)
 #figure(
   table(
-  columns: (1fr, 2fr, 2fr),
-  inset: 5pt,
+  columns: (2fr, 2fr, 2fr),
+  inset: 7pt,
   align: center,
   [Stakeholders], [Values], [Potential risks/harms],
   [Healthcare providers (Direct)], [Nonmaleficence, respect for human anatomy - The model's decisions should not be absolute, and the model's limits needs to be recognized], [A doctor should not be punished with medical negligence and have their medical license revoked for not following the model's (incorrect) decisions],
@@ -92,6 +76,27 @@ In section II and III, we focus solely on healthcare use cases.
 - Talk about the book @VSD-book when discussing methodology of getting the values of stakeholders
 - Values are from @VSD-paper @Mapping-VSD
 
+The values used in @ethical-impact-assessment-hospital are from both traditional @VSD-paper and AI-specific  @Mapping-VSD sources. We use an emergent methodology which focuses more on empirical investigations as opposed to conceptual investigations as the latter introduces researcher bias and tends to misrepresent the stakeholders' values @VSD-book. 
+
+
+
 = Recommendations & Considerations
 
+Choosing a dataset is the most important part of the process, especially in avoiding bias. The dataset should be representative, but most facial emotion recognition datasets simply are not. This can be seen in @racial-composition, @gender-composition, and @source-composition.
 
+To deal with this issue, we can either choose the least biased dataset from the available ones, or aggregate multiple datasets to create a more representative one. We chose the latter despite its difficulty since thats the best way to ensure that the model is unbiased. An algorithm in @Dataset-analysis-paper will be used to measure the bias in our new dataset.
+
+#figure(
+  image("racial-composition-dataset.png", width: 100%),
+  caption: [Racial composition in common facial emotion recognition datasets with the "White" majority class @Dataset-analysis-paper.],
+) <racial-composition>
+
+#figure(
+  image("gender-composition-dataset.png", width: 100%),
+  caption: [Gender composition in common facial emotion recognition datasets with the the "Male" majority class @Dataset-analysis-paper.],
+) <gender-composition>
+
+#figure(
+  image("source-distribution.png", width: 100%),
+  caption: [Source distribution of facial emotion datasets. North/South America, Asia and Europe make up 87.5% of all frequencies @Dataset-analysis-paper.],
+) <source-composition>
