@@ -11,7 +11,7 @@
   bibliography-file: "refs.yml",
 )
 
-= Introduction (525 words)
+= Introduction (528 words)
 
 This report focuses on a machine learning task for emotion recognition on human face images. Whilst not novel, it is a useful tool in a variety of applications, such as in marketing, human-robot interactions, healthcare, and security @Emotion-recognition-meta-review. 
 
@@ -22,7 +22,7 @@ This is a classification task which predicts the emotion of a person from an ima
 The range of possible emotions is typically decided by a dataset, though we aim to pick a dataset which contains the emotions of: joy, trust, fear, surprise, sadness, disgust, anger, and anticipation. According to Plutchik's wheel of emotions, a widely accepted model in discrete emotion theory, these are the universally recognized basic emotions @Emotion-recognition-meta-review.
 
 #figure(
-  image("emotion-wheel.jpg", width: 80%),
+  image("emotion-wheel.jpg", width: 100%),
   caption: [Plutchik's wheel of emotions, with the base emotions as well as their amplified/attenuated versions. Intensity increases towards the center and vice versa @Emotion-wheel-source.],
 ) <emotion-wheel>
 
@@ -30,12 +30,9 @@ We do not use the full range of emotions as it is not practical to train a model
 
 For the output format, we want a probability distribution over the classes. This has the benefit of giving more information than single class outputs, can be used to calculate a confidence score, is easily transformed into a positive/negative/neutral output and is easily done (softmax layer). With this, we allow for more model flexibility, which is crucial for deployment to various organization and/or be made accessible via open sourcing.
 
-#figure(
-  image("training-process.jpg", width: 100%),
-  caption: [Process of training an emotion recognition model to be used for our model from choosing a dataset to outputting a verdict @Emotion-recognition-meta-review.],
-) <emotion-recognition-process>
 
-The dataset used for training is custom-made, and the process of producing it will be elaborated in section III.
+
+The dataset used for training is custom-made from online datasets, and the process of producing it will be elaborated in section III.
 
 == Ethical impact, Value Sensitive Design, and use case
 
@@ -84,19 +81,24 @@ The values used in @ethical-impact-assessment-hospital are from both traditional
 
 Choosing a dataset is the most important part of the process, especially in avoiding bias. The dataset should be representative, but most facial emotion recognition datasets simply are not. This can be seen in @racial-composition, @gender-composition, and @source-composition.
 
-To deal with this issue, we can either choose the least biased dataset from the available ones, or aggregate multiple datasets to create a more representative one. We chose the latter despite its difficulty since thats the best way to ensure that the model is unbiased. An algorithm in @Dataset-analysis-paper will be used to measure the bias in our new dataset.
-
 #figure(
   image("racial-composition-dataset.png", width: 100%),
-  caption: [Racial composition in common facial emotion recognition datasets with the "White" majority class @Dataset-analysis-paper.],
+  caption: [Racial composition in common facial emotion recognition datasets with "White" being the majority class @Dataset-analysis-paper.],
 ) <racial-composition>
 
 #figure(
   image("gender-composition-dataset.png", width: 100%),
-  caption: [Gender composition in common facial emotion recognition datasets with the the "Male" majority class @Dataset-analysis-paper.],
+  caption: [Gender composition in common facial emotion recognition datasets with "Male" being the majority class @Dataset-analysis-paper.],
 ) <gender-composition>
 
 #figure(
   image("source-distribution.png", width: 100%),
   caption: [Source distribution of facial emotion datasets. North/South America, Asia and Europe make up 87.5% of all frequencies @Dataset-analysis-paper.],
 ) <source-composition>
+
+To deal with this issue, we can either choose the least biased dataset from the available ones, or aggregate multiple datasets to create a more representative one. We chose the latter despite its difficulty since thats the best way to ensure that the model is unbiased. An algorithm in @Dataset-analysis-paper will be used to measure the bias in our new dataset.
+
+#figure(
+  image("training-process.jpg", width: 100%),
+  caption: [Process of training an emotion recognition model to be used for our model from choosing a dataset to outputting a verdict @Emotion-recognition-meta-review.],
+) <emotion-recognition-process>
