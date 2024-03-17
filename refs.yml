@@ -68,6 +68,12 @@ Mapping-VSD:
     url: https://doi.org/10.1007/s43681-021-00038-3
 
 
+Datasheet-for-dataset:
+    type: article
+    title: "Datasheets for Datasets"
+    date: 2018
+    author: ["T. Gebru", "J. Morgenstern", "B. Vecchione", "J. Wortman Vaughan", "H. Wallach", "H. Daumé III", "K. Crawford"]
+    url: https://arxiv.org/abs/1803.09010
 
 # Name:
 #     type: 

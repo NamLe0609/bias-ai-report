@@ -1,3 +1,7 @@
+The values used in @ethical-impact-assessment-hospital are from both traditional @VSD-paper and AI-specific  @Mapping-VSD sources. We use an emergent methodology which focuses more on empirical investigations as opposed to conceptual investigations as the latter introduces researcher bias and tends to misrepresent the stakeholders' values @VSD-book.
+
+- Talk about the book @VSD-book when discussing methodology of getting the values of stakeholders
+
 = Recommendations & Considerations
 
 Choosing a dataset is the most important part of the process, especially in avoiding bias. The dataset should be representative, but most facial emotion recognition datasets simply are not. This can be seen in @racial-composition, @gender-composition, and @source-composition.

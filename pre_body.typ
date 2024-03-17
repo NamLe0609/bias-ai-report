@@ -1,4 +1,4 @@
-= Introduction (528 words)
+= Introduction
 
 This report focuses on a machine learning task for emotion recognition on human face images. Whilst not novel, it is a useful tool in a variety of applications, such as in marketing, human-robot interactions, healthcare, and security @Emotion-recognition-meta-review. 
 
@@ -9,7 +9,7 @@ This is a classification task which predicts the emotion of a person from an ima
 The range of possible emotions is typically decided by a dataset, though we aim to pick a dataset which contains the emotions of: joy, trust, fear, surprise, sadness, disgust, anger, and anticipation. According to Plutchik's wheel of emotions, a widely accepted model in discrete emotion theory, these are the universally recognized basic emotions @Emotion-recognition-meta-review.
 
 #figure(
-  image("emotion-wheel.jpg", width: 90%),
+  image("emotion-wheel.jpg", width: 84%),
   caption: [Plutchik's wheel of emotions, with the base emotions as well as their amplified/attenuated versions. Intensity increases towards the center and vice versa @Emotion-wheel-source.],
 ) <emotion-wheel>
 
@@ -33,6 +33,8 @@ VSD involves three investigation steps.
 + Empirical: Using quantitative/qualitative methods to expand on the concepts found in the previous step.
 + Technical: Analysis of existing technological mechanism on, and proactive design supporting of human values.
 
-A potential use case of this model is for healthcare surveillance system @Emotion-recognition-medical-surveillance. In hospitals, the model could be used to detect signs of depression or anxiety in patients, and alert the clinic to administer medicine. Compared to traditional methods, such as human observation, the model could be less prone to error and be more available to patients. This technology could even be used in a public setting to detect signs of mental illness in a population.
+A potential use case of this model is for healthcare surveillance system @Emotion-recognition-medical-surveillance. In hospitals, the model could be used to detect signs of depression or anxiety in patients, and alert the clinic to administer medicine. Compared to traditional methods, such as human observation, the model could be less prone to error and be more available to patients. This technology could even be used in a public setting to detect signs of depression of individuals in a population.
 
 In the hospital example, we must make sure the model is only used on images of patients who have given explicit consent, but how do we get the consent of people who are not mentally well enough to make decisions? Issues like this is beyond our scope of responsibility, but it is important to consider them.
+
+In the following sections (section II and III), we focus solely on the healthcare use case in hospitals.
