@@ -66,6 +66,9 @@ In section II and III, we focus solely on healthcare use cases.
   [Medical institution (Indirect)], [Human welfare, freedom from bias - Casualties must be minimized to maintain reputation so the existing system must work well for all], [Biased diagnosis and preventable deaths could lead to lawsuits, loss of trust, tarnished reputation, and funding cuts (if government funded facility).],
   [Pharmaceutical Company (Direct)], [Accuracy - Production and distribution chains could be disrupted if output data has too many incorrect predictions], [Impacted distribution could cause sending too much/little resources to hospital, leading to shortages/wastage],
   [Insurance companies (Indirect)], [Explicability - The outcome of the model must be clear to prevent any ambiguity as to whether or not insurance must cover for a client], [Disputes over coverage would deteriorate the relationship between the hospital and the insurance company, leading to a cancelled contract],
+  [Government institution, public health enforcer (Direct)], [Human welfare, universal usability - ], [],
+  [Government institution, regulators and policymakers (Indirect)], [Courtesy, trust, accountability - ], [],
+  [General public, (Indirect)],[Privacy, autonomy - ],[],
   ),
   caption: [Ethical impact assessment using VSD in a hospital environment]
 ) <ethical-impact-assessment-hospital>
