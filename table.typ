@@ -49,7 +49,7 @@
   
   Even with regulation, if the technology is misused, the government has a duty to take some responsibility for the consequences.],
   ),
-  caption: [Ethical impact assessment using VSD in a hospital setting]
+  caption: [Ethical impact assessment using VSD in a hospital setting.]
 ) <ethical-impact-assessment-hospital>
 
 

@@ -75,6 +75,28 @@ Datasheet-for-dataset:
     author: ["T. Gebru", "J. Morgenstern", "B. Vecchione", "J. Wortman Vaughan", "H. Wallach", "H. Daumé III", "K. Crawford"]
     url: https://arxiv.org/abs/1803.09010
 
+Human-computer-handbook:
+    type: book
+    title: "HUMAN VALUES, ETHICS, AND DESIGN "
+    date: 2007
+    author: ["B. Friedman", "P. H. Kahn Jr."]
+    url: https://www.taylorfrancis.com/chapters/edit/10.1201/9781410615862-78/human-values-ethics-design-batya-friedman-peter-kahn-jr
+
+Public-surveillance-paper:
+    type: article
+    title: We have to talk about emotional AI and crime
+    date: 2022
+    author: ["L. Podoletz"]
+    url: https://link.springer.com/article/10.1007/s00146-022-01435-w
+
+Public-surveillance-bbc:
+    type: web
+    title: The cameras that know if you're happy - or a threat
+    date: 2018
+    author: ["D. Thomas"]
+    url: https://www.bbc.co.uk/news/business-44799239
+
+
 # Name:
 #     type: 
 #     title: 

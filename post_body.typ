@@ -1,6 +1,12 @@
-The values used in @ethical-impact-assessment-hospital are from both traditional @VSD-paper and AI-specific  @Mapping-VSD sources. We use an emergent methodology which focuses more on empirical investigations as opposed to conceptual investigations as the latter introduces researcher bias and tends to misrepresent the stakeholders' values @VSD-book.
+The values used in @ethical-impact-assessment-hospital are from both traditional @VSD-paper and AI-specific  @Mapping-VSD sources. 
 
-- Talk about the book @VSD-book when discussing methodology of getting the values of stakeholders
+The values acquired so far have been through conceptual investigations, which are prone to researcher bias and tend to misrepresent the stakeholders' values @VSD-book. Therefore, one should view these values as a starting point to build upon, and not as the final representation. 
+
+After closer examination of the stakeholders' understandings, contexts, and experiences through empirical investigations @Human-computer-handbook, we can update the previously acquired values to be more representative. This process can be done using traditional methods such as interviews, surveys, or questionnaires, or more VSD-specific methods such as participatory design and envisioning cards @VSD-book.
+
+// This iterative process of updating values in the design process can be clearly seen in the "Room with a View" case study @VSD-paper, wherein conducting empirical investigations helped the designers not only enhance their original values, but also bring forth new ones.
+
+
 
 = Recommendations & Considerations
 
