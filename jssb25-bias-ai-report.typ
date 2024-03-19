@@ -101,7 +101,3 @@ Choosing a dataset is the most important part of the process, especially in avoi
 
 To deal with this issue, we can either choose the least biased dataset from the available ones, or aggregate multiple datasets to create a more representative one. We chose the latter despite its difficulty since thats the best way to ensure that the model is unbiased. An algorithm in @Dataset-analysis-paper will be used to measure the bias in our new dataset.
 
-#figure(
-  image("training-process.jpg", width: 100%),
-  caption: [Process of training an emotion recognition model to be used for our model from choosing a dataset to outputting a verdict @Emotion-recognition-meta-review.],
-) <emotion-recognition-process>

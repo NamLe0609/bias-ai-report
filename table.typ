@@ -25,7 +25,7 @@
   
   Bad actors could then use this data for nefarious purposes, such as identity theft or blackmail.],
 
-  [Medical institution, (Indirect)], 
+  [Medical institution (Indirect)], 
   [Human welfare, freedom from bias, efficiency -\ 
   - Existing system must work well for all individuals despite their differences to minimize casualties
   - All forms of bias must be prevented to ensure equal treatment of all patients

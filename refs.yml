@@ -67,7 +67,6 @@ Mapping-VSD:
     author: ["S. Umbrello", "I. van de Poel"]
     url: https://doi.org/10.1007/s43681-021-00038-3
 
-
 Datasheet-for-dataset:
     type: article
     title: "Datasheets for Datasets"
@@ -102,6 +101,21 @@ Value-dams-flows:
     date: 2007
     author: ["J. K. Wolk", "B. Friedman", "G. Jancke"]
     url: https://www.researchgate.net/publication/220729345_Value_Tensions_in_Design_The_Value_Sensitive_Design_Development_and_Appropriation_of_a_Corporation's
+
+Google-data-quality:
+    type: web
+    title: "The Size and Quality of a Data Set"
+    date: 2022
+    author: ["Google"]
+    url: https://developers.google.com/machine-learning/data-prep/construct/collect/data-size-quality
+
+GDPR-data-ethics:
+    type: web
+    title: "Data ethics and GDPR"
+    date: 2020
+    author: ["M. Louw", "M. Curl"]
+    url: https://www.csp.org.uk/professional-clinical/digital-physiotherapy/data-ethics-gdpr
+
 
 # Name:
 #     type: 
