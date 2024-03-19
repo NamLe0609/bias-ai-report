@@ -116,6 +116,20 @@ GDPR-data-ethics:
     author: ["M. Louw", "M. Curl"]
     url: https://www.csp.org.uk/professional-clinical/digital-physiotherapy/data-ethics-gdpr
 
+Sources-bias-ML:
+    type: article
+    title: "A Framework for Understanding Sources of Harm throughout
+the Machine Learning Life Cycle"
+    date: 2021
+    author: ["H. Suresh", "J. Guttag"]
+    url: https://arxiv.org/abs/1901.10002
+
+Model-cards:
+    type: article
+    title: "Model Cards for Model Reporting"
+    date: 2019
+    author: ["M. Mitchell", "S. Wu", "A. Zaldivar", "P. Barnes", "L. Vasserman", "B. Hutchinson", "E. Spitzer", "I. D. Raji", "T. Gebru"]
+    url: https://dl.acm.org/doi/10.1145/3287560.3287596
 
 # Name:
 #     type: 
