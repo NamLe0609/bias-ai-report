@@ -1,15 +1,15 @@
 The values used in @ethical-impact-assessment-hospital are from both traditional @VSD-paper and AI-specific  @Mapping-VSD sources. 
 
-The values in @ethical-impact-assessment-hospital have been acquired purely through conceptual investigations, which are prone to researcher bias and tend to misrepresent the stakeholders' actual views @VSD-book. One should view these simply as a starting point to build upon. 
+The values in @ethical-impact-assessment-hospital have been acquired purely through conceptual investigations, which are prone to researcher bias and tend to misrepresent the stakeholders' actual views @VSD-book.
 
-After closer examination of the stakeholders' understandings, contexts, and experiences through empirical investigations @Human-computer-handbook, we can update the previously acquired values. This can be done using traditional methods such as interviews and surveys, or more VSD-specific methods such as participatory design and envisioning cards @VSD-book.
+Only after closer examination of the stakeholders' understandings, contexts, and experiences through empirical investigations @Human-computer-handbook, can we update the previously acquired values and guarantee their trustworthiness. This can be done using traditional methods such as interviews and surveys, or more VSD-specific methods such as participatory design and envisioning cards @VSD-book.
 
-An important step of the process is analyzing value conflicts, and deciding which stakeholders' needs should be prioritized (see the dams-and-flows method @Value-dams-flows).
+An important step of the process is analyzing value conflicts, and deciding which stakeholders' needs should be prioritized (known as the dams-and-flows method @Value-dams-flows).
 
 One value conflict is between patients' need for privacy and the insurance companies' desire for explicability. In order to explain the decisions made by the model, the insurance companies will need access to the patient's data, which is a clear violation of the patient's privacy. 
-One approach to resolve this is to have the model explain its decisions in a general but informative way, like providing a descriptive summary of the patient's condition. 
+An approach to resolve this is to have the model explain its decisions in a general but informative way, like providing a descriptive summary of the patient's condition. 
 
-Another is between the medical institution's need for efficiency and the healthcare providers' want for autonomy. Healthcare providers require lots of time and resources to make decisions, which would make diagnosis and treatment slower. The institution could use this time and resources to treat more patients instead. This is a difficult tension to resolve, but we believe that the model should be used as a tool to assist the healthcare providers, not replace them. As such, the healthcare providers' interest should be prioritized.
+Another conflict is between the medical institution's need for efficiency and the healthcare providers' want for autonomy. Healthcare providers require lots of time and resources to make decisions, which would make diagnosis and treatment slower. The institution could use this time and resources to treat more patients instead. This is a difficult tension to resolve, but we believe that the model should be used as a tool to assist the healthcare providers, not replace them. As such, the healthcare providers' interest should be prioritized.
 
 Whilst emotion recognition technology has benefits in diagnosing mental health issues, using it for crime prevention and/or in public spaces is a completely different matter. From past research, it is clear that the technology is not accurate enough to be used in these scenarios. Even if it were, using it would be ethically questionable (see @Public-surveillance-paper@Public-surveillance-bbc).
 
@@ -34,8 +34,8 @@ Choosing a dataset is the most important part of the process, especially in avoi
 - Contains at least 7 of 8 emotions mentioned in @emotion-wheel
 - Is reliable, meaning accurate labels and little noise @Google-data-quality
 - Contains GDPR-compliant @GDPR-data-ethics data collected ethically
-- Contains realistic, preferably medical data
-- Is representative of the user base
+- Contains realistic, and preferably medical data
+- Is representative of the user base of the technology
 
 This last point is the hardest to handle, as most facial emotion recognition (FER) datasets simply are not representative. This can be seen in @racial-composition, @gender-composition, and @source-composition. 
 
@@ -52,7 +52,7 @@ This last point is the hardest to handle, as most facial emotion recognition (FE
 ) <gender-composition>
 
 #figure(
-  image("source-distribution.png", width: 80%),
+  image("source-distribution.png", width: 98%),
   caption: [Source distribution of FER datasets. North/South America, Asia and Europe make up 87.5% of all frequencies @Dataset-analysis-paper.],
 ) <source-composition>
 
@@ -78,7 +78,7 @@ For risk and bias mitigation during the last four steps of @emotion-recognition-
   caption: [Potential areas of bias during the model training and implementation process @Sources-bias-ML.],
 ) <bias-sources-diagram>
 
-Let us now analyze a source of bias shown in @bias-sources-diagram. 
+We will now analyze a source of bias shown in @bias-sources-diagram. 
 
 Learning bias is an issue where the model is optimized for a specific metric, like accuracy, while disregarding fairness metrics like f1 score, precision or recall.
 
@@ -105,4 +105,4 @@ An issue which is not as easily solved is with regards to the dataset. Aggregati
 
 Bias can be introduced at every step of data collection, but as we do not have control over the original datasets, we cannot mitigate these biases. The only solution, besides creating a dataset from scratch, is to be aware of these biases and to document them in the model card.
 
-In this paper, cover the ethics of the technology, but failed to provide any implementation details, such as providing what algorithms to use. This is because there are plenty of resources on this @Emotion-recognition-technique-1@Emotion-recognition-technique-2@Emotion-recognition-technique-3@Emotion-recognition-technique-4. Despite that, before any definitive recommendations is made, it would be helpful to cover these in more detail.
+In this paper, we cover the ethics of the technology, but failed to provide any implementation details, such as providing what algorithms to use since there are plenty of existing resources on this topic @Emotion-recognition-technique-1@Emotion-recognition-technique-2@Emotion-recognition-technique-3@Emotion-recognition-technique-4. Regardless, before any definitive recommendations is made, it would be helpful to cover these in more detail.

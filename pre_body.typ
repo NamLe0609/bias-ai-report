@@ -35,6 +35,6 @@ VSD involves three investigation steps.
 
 A potential use case of this model is for healthcare surveillance system @Emotion-recognition-medical-surveillance. In hospitals, the model could be used to detect signs of depression or anxiety in patients, and alert the clinic to administer medicine. Compared to traditional methods, such as human observation, the model could be less prone to error and be more available to patients. 
 
-In the hospital example, we must make sure the model is only used on images of patients who have given explicit consent, but how do we get the consent of people who are not mentally well enough to make decisions? Issues like this is beyond our scope of responsibility, but it is important to consider them.
+In the hospital example, we must make sure the model is only used on images of patients who have given explicit consent, but how do we get the consent of people who are not mentally well enough to make decisions? Issues like this is beyond our scope of responsibility, but it is important to consider nonetheless.
 
 In the following sections (section II and III), we focus solely on the healthcare use case in hospitals.

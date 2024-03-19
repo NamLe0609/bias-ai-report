@@ -4,7 +4,7 @@
 #figure(
   table(
   columns: (1fr, 2fr, 2fr),
-  inset: 6.5pt,
+  inset: 5.9pt,
   align: left,
   [Stakeholders], [Values], [Potential risks/harms],
 
@@ -12,24 +12,23 @@
   [Respect for human autonomy  -\ 
   - The model's decisions should not be absolute, and it's limits needs to be recognized
   - The model should act as an aid to help healthcare providers make their decisions, providing an additional point of view], 
-  [A misdiagnosis might be given, in which case the healthcare provider will be forced to blindly follow the model's decision. 
+  [A misdiagnosis might be given, in which case the healthcare provider might be forced to blindly follow the model's decision. 
   
   If this results in harm to the patient, the healthcare provider could be held accountable for medical negligence, potentially leading to revocation of their medical license.],
 
   [Patient (Indirect)], 
-  [Informed consent, privacy -\ 
+  [Privacy, informed consent -\ 
   - A patient should have absolute authority over their data
   
-  - Hospitals/medical institutions are expected to not record, store and process data unless given explicit consent], [Personal data stored in hospital databases could be breached and leaked. 
-  In rare cases, institutions could (mis)use this data for their own benefit, such as selling it to third parties despite GDPR regulations.
-  
-  Bad actors could then use this data for nefarious purposes, such as identity theft or blackmail.],
+  - Hospitals/medical institutions are expected to not record, store and process data unless given explicit consent], [Personal data stored in hospital databases could be breached and leaked. Bad actors could then use this data for nefarious purposes, such as identity theft or blackmail.
+
+  In rare cases, institutions could (mis)use this data for their own benefit, such as selling it to third parties despite GDPR regulations.],
 
   [Medical institution (Indirect)], 
   [Human welfare, freedom from bias, efficiency -\ 
   - Existing system must work well for all individuals despite their differences to minimize casualties
   - All forms of bias must be prevented to ensure equal treatment of all patients
-  - The model should be able to provide a diagnosis in a timely manner], 
+  - The model should be able to provide diagnoses in a timely manner], 
   [A biased diagnosis, whether it be due to the model's false output or misinterpretation of the model's output by a healthcare provider, could lead to lives lost. The same applies to a delayed diagnosis.
   
   The institution could then face lawsuits, have to compensate patients financially, or even have their funding rescinded. In less grave situations, the institution's reputation could be damaged.],

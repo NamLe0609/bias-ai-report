@@ -1,4 +1,4 @@
-#import "template-alternate.typ": *
+#import "template.typ": *
 #ieee(
   title: [ Ethics & Bias in AI Coursework ],
   authors: (
