@@ -4,14 +4,12 @@ The values in @ethical-impact-assessment-hospital have been acquired purely thro
 
 After closer examination of the stakeholders' understandings, contexts, and experiences through empirical investigations @Human-computer-handbook, we can update the previously acquired values. This can be done using traditional methods such as interviews and surveys, or more VSD-specific methods such as participatory design and envisioning cards @VSD-book.
 
-An important step of the process is analyzing value conflicts, and deciding which stakeholders should be prioritized (also known as the dams and flows method @Value-dams-flows).
-
-This step requires the results of the empirical investigations, however as this has not been carried out, we will attempt to speculate the tensions based on the conceptual investigations. 
+An important step of the process is analyzing value conflicts, and deciding which stakeholders' needs should be prioritized (see the dams-and-flows method @Value-dams-flows).
 
 One value conflict is between patients' need for privacy and the insurance companies' desire for explicability. In order to explain the decisions made by the model, the insurance companies will need access to the patient's data, which is a clear violation of the patient's privacy. 
 One approach to resolve this is to have the model explain its decisions in a general but informative way, like providing a descriptive summary of the patient's condition. 
 
-Another is between the medical institution's need for efficiency and the healthcare providers' want for autonomy. Healthcare providers require lots of time and resources to make decisions, which would make diagnosis and treatment slower. The institution, however, could use this extra time and resources to treat more patients. This is a difficult tension to resolve, but we believe that the model should be used as a tool to assist the healthcare providers, not replace them. As such, the healthcare providers' interest should be preserved.
+Another is between the medical institution's need for efficiency and the healthcare providers' want for autonomy. Healthcare providers require lots of time and resources to make decisions, which would make diagnosis and treatment slower. The institution could use this time and resources to treat more patients instead. This is a difficult tension to resolve, but we believe that the model should be used as a tool to assist the healthcare providers, not replace them. As such, the healthcare providers' interest should be prioritized.
 
 Whilst emotion recognition technology has benefits in diagnosing mental health issues, using it for crime prevention and/or in public spaces is a completely different matter. From past research, it is clear that the technology is not accurate enough to be used in these scenarios. Even if it were, using it would be ethically questionable (see @Public-surveillance-paper@Public-surveillance-bbc).
 
@@ -88,9 +86,23 @@ To mitigate this, we can assign different weights to metrics depending on their 
 
 Other sources of bias can be mitigated in a similar and relatively simple manner, as long as model engineers are aware of them.
 
-Another method of mitigation is seen in @Gender-shades, where the model is tested on a variety of predefined groups, such as men and women, light and dark skinned individuals, and so on. Afterwards, the performance for each group is listed out for comparison purposes. An unbiased model should perform equally well on every group. Note that while this is useful, it is not a complete solution, as it is impossible to test the model on every possible group combinations. This is useful for medical institutions as they require the model to be as unbiased as possible for the equal treatment of all patients.
+Another method of mitigation is seen in @Gender-shades, where the model is tested on a predefined groups, such as men and women, light and dark skinned individuals, etcetera. Afterwards, the performance for each group is listed out for comparison purposes. An unbiased model should perform equally well on every group. Note that while useful, this is not a complete solution, as it is impossible to test the model on every possible group. This is useful for medical institutions as they require the model to be as unbiased as possible for the equal treatment of all patients.
 
 After training the model, we aim to document the process in a model card, which has the added benefit of increasing transparency @Model-cards. This would greatly benefit policymakers as they can quickly grasp key information about the model, allowing more informed decision-making on how to regulate such technologies. Greater transparency would also help with explainability, which insurance companies are interested in.
 
 == Critical assessment and limitations
 
+The recommendations given in this section aims to provide an unbiased and fair model using well-researched methodologies, however there are clear limitations. 
+
+The main issue is the lack of empirical investigations. The values identified in @ethical-impact-assessment-hospital are purely speculative, and may not reflect the actual views of the stakeholders. Seeing as this entire section is based on these values, the entire process may be flawed. There is a simple solution to this, however, which is to carry out empirical investigations and update our process accordingly.
+
+An issue which is not as easily solved is with regards to the dataset. Aggregating multiple datasets for better representation is a good idea, but it is not perfect. 
+
+#figure(
+  image("bias-mitigation-data.png", width: 100%),
+  caption: [Potential areas of bias during the data collection process @Sources-bias-ML.],
+) <bias-sources-data-diagram>
+
+Bias can be introduced at every step of data collection, but as we do not have control over the original datasets, we cannot mitigate these biases. The only solution, besides creating a dataset from scratch, is to be aware of these biases and to document them in the model card.
+
+In this paper, cover the ethics of the technology, but failed to provide any implementation details, such as providing what algorithms to use. This is because there are plenty of resources on this @Emotion-recognition-technique-1@Emotion-recognition-technique-2@Emotion-recognition-technique-3@Emotion-recognition-technique-4. Despite that, before any definitive recommendations is made, it would be helpful to cover these in more detail.

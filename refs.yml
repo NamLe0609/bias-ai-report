@@ -131,6 +131,35 @@ Model-cards:
     author: ["M. Mitchell", "S. Wu", "A. Zaldivar", "P. Barnes", "L. Vasserman", "B. Hutchinson", "E. Spitzer", "I. D. Raji", "T. Gebru"]
     url: https://dl.acm.org/doi/10.1145/3287560.3287596
 
+Emotion-recognition-technique-1:
+    type: article
+    title: "Human Emotion Recognition: Review of Sensors and Methods"
+    date: 2020
+    author: ["A. Dzedzickis", "A. Kaklauskas", "V. Bucinskas"]
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7037130/
+
+Emotion-recognition-technique-2:
+    type: article
+    title: "Facial emotion recognition methods, datasets and technologies: A literature survey"
+    date: 2023
+    author: ["P. Naga", "S. D. Marri", "R. Borreo"]
+    url: https://www.sciencedirect.com/science/article/abs/pii/S2214785321048987
+
+Emotion-recognition-technique-3:
+    type: article
+    title: "A survey on facial emotion recognition techniques: A state-of-the-art literature review"
+    date: 2022
+    author: ["F. Z. Canal", "T. R. Müller", "J. C. Matias", "G. G. Scotton", "A. R. de Sa Junior", "E. Pozzebon", "A. C. Sobieranski"]
+    url: https://www.sciencedirect.com/science/article/abs/pii/S0020025521010136?via%3Dihub
+
+Emotion-recognition-technique-4:
+    type: article
+    title: "Emotion recognition using multi-modal data and machine learning techniques: A tutorial and review"
+    date: 2020
+    author: ["J. Zhang", "Z. Yin", "P. Chen", "S. Nichele"]
+    url: https://www.sciencedirect.com/science/article/abs/pii/S1566253519302532
+
+
 # Name:
 #     type: 
 #     title: 
